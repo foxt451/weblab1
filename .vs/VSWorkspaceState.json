@@ -1,5 +1,9 @@
 {
-  "ExpandedNodes": ["", "\\.config"],
-  "SelectedNode": "\\.config\\.eslintrc.json",
+  "ExpandedNodes": [
+    "",
+    "\\.husky",
+    "\\imgs"
+  ],
+  "SelectedNode": "\\.eslintrc.js",
   "PreviewInSolutionExplorer": false
 }

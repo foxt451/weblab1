@@ -1,31 +1,51 @@
+:root {
+  --def-indent: 5%;
+  --minor-indent: 2%;
+  --def-fixed-indent: 20px;
+  --minor-fixed-indent: 10px;
+  --border-color: rgb(238, 130, 238);
+  --border-width: 5px;
+  --fixed-elements-background: rgb(138, 43, 226);
+  --main-element-background: rgb(255, 218, 185);
+  --side-element-background: rgb(255, 165, 0);
+  --annotating-element-background: rgb(255, 192, 203);
+  --active-link-color: rgb(0, 0, 0);
+  --secondary-font-style: italic;
+  --navbut-font-size: large;
+  --navbut-def-bg: rgb(216, 191, 216);
+  --navbut-active-bg: rgb(255, 235, 205);
+  --selected-dec: underline;
+  --def-font: Arial, Helvetica, sans-serif;
+}
+
 .flexbox {
   display: flex;
 }
 
 aside {
-  font-style: italic;
+  font-style: var(--secondary-font-style);
 }
 
 .inline {
   margin-right: auto;
 }
 
-img.block {
+.img-block {
   display: block;
-  margin: 5% auto;
+  margin: var(--def-fixed-indent) auto;
 }
 
-img.left {
+.img-left {
   float: left;
 }
 
-img.inline-block {
+.img-inline-block {
   display: inline-block;
-  margin: 2%;
+  margin: var(--minor-fixed-indent);
 }
 
 img {
-  border: 5px solid violet;
+  border: var(--border-width) solid var(--border-color);
 }
 
 header {
@@ -37,7 +57,7 @@ nav {
   display: flex;
   justify-content: end;
   flex-direction: row;
-  background-color: blueviolet;
+  background-color: var(--fixed-elements-background);
   align-items: stretch;
 }
 
@@ -46,14 +66,14 @@ h1 {
 }
 
 footer {
-  background-color: blueviolet;
-  padding: 20px;
+  background-color: var(--fixed-elements-background);
+  padding: var(--minor-indent);
   display: flex;
   justify-content: end;
 }
 
 article {
-  background-color: peachpuff;
+  background-color: var(--main-element-background);
   flex-basis: 100%;
 }
 
@@ -64,32 +84,32 @@ article {
 
 .navbut {
   height: 100%;
-  font-size: large;
-  background-color: thistle;
+  font-size: var(--navbut-font-size);
+  background-color: var(--navbut-def-bg);
   border: 0;
-  margin: 0 2px 0 2px;
+  margin: 0 var(--minor-fixed-indent) 0 var(--minor-fixed-indent);
 }
 
 .navbut:hover {
-  background-color: blanchedalmond;
+  background-color: var(--navbut-active-bg);
 }
 
 #navbutlast {
-  margin: 0 0 0 2px;
+  margin: 0 0 0 var(--minor-fixed-indent);
 }
 
 .activelink {
-  color: black;
-  text-decoration: underline;
+  color: var(--active-link-color);
+  text-decoration: var(--selected-dec);
 }
 
-#aside1 {
-  background-color: orange;
+.side {
+  background-color: var(--side-element-background);
 }
 
-#aside2 {
-  background-color: pink;
-  padding: 10px;
+.annotation {
+  background-color: var(--annotating-element-background);
+  padding: var(--def-fixed-indent);
 }
 
 #story {
@@ -98,21 +118,17 @@ article {
 
 #aside3 {
   flex-basis: 30%;
-  background-color: orange;
-  text-align: justify;
-  padding: 10px;
+  padding: var(--def-fixed-indent);
 }
 
 #wrapper {
   display: flex;
   flex-direction: column;
-  background-color: brown;
   height: 100vh;
 }
 
 p {
-  text-align: justify;
-  margin: 15px;
+  margin: var(--def-fixed-indent);
 }
 
 main {
@@ -126,11 +142,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 15px;
+  margin: var(--def-fixed-indent);
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--def-font);
+    text-align: justify;
 }
 
 body {
