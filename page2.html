@@ -6,61 +6,56 @@
     <link rel="stylesheet" href="styles.css" />
     <title>My page 2</title>
 </head>
-  <body>
-    <header>
-      <nav>
-        <h1 class="inline">Заголок</h1>
-        <div>
-          <a href="index.html"
-            ><button class="navbut"><span>Головна</span></button></a
-          >
-        </div>
-        <div>
-          <a href="page2.html"
-            ><button class="navbut">
-              <span class="activelink">Page 2</span>
-            </button></a
-          >
-        </div>
-        <div>
-          <a href="page3.html"
-            ><button class="navbut"><span>Page 3</span></button></a
-          >
-        </div>
-        <div>
-          <a href="page4.html"
-            ><button class="navbut" id="navbutlast">
-              <span>Page 4</span>
-            </button></a
-          >
-        </div>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main class="flexbox">
-        <aside id="aside1" class="side">
-          <p>
+  <body class="stack-column">
+      <header class="top-sticky bg-fixed-el stack-row">
+          <h1 class="def-fixed-margin">Заголок</h1>
+          <nav class="stack-row stack-end stack-cross-stretch dominant-section">
+              <a class="navbut minor-fixed-padding stack-column stack-center" href="index.html">
+                  <span>
+                      Головна
+                  </span>
+              </a>
+              <a class="navbut minor-fixed-padding stack-column stack-center activelink" href="page2.html">
+                  <span>
+                      Page 2
+                  </span>
+              </a>
+              <a class="navbut minor-fixed-padding stack-column stack-center" href="page3.html">
+                  <span>
+                      Page 3
+                  </span>
+              </a>
+              <a class="navbut minor-fixed-padding stack-column stack-center" href="page4.html">
+                  <span>
+                      Page 4
+                  </span>
+              </a>
+          </nav>
+      </header>
+      <main class="stack-row dominant-section stack-cross-stretch">
+        <aside class="side-bg note-font-style">
+          <p class="def-fixed-margin">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo.
           </p>
-          <p>
+          <p class="def-fixed-margin">
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
             fugit, sed quia consequuntur magni dolores eos qui ratione
             voluptatem sequi nesciunt.
           </p>
         </aside>
-        <div id="subcontainer">
-          <aside id="aside2" class="annotation">
+        <div class="stack-column">
+          <aside class="annotation-bg def-fixed-padding note-font-style">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo.
           </aside>
-          <article id="article" class="flexbox">
-              <div id="story">
-                  <h3>Useful german phrases:</h3>
+          <article  class="stack-row main-el-bg dominant-section">
+              <div class="four-fifth-by-def">
+                  <h3 class="def-fixed-margin">Useful german phrases:</h3>
                   <ul>
                       <li>Guten Tag!</li>
                       <li>Entschuldigung!</li>
@@ -69,9 +64,8 @@
                   </ul>
 
                   <img src="imgs/cat2.jpg"
-                       class="img-inline-block img-left"
-                       width="20%" />
-                  <p>
+                       class="img-left small-img def-fixed-margin" />
+                  <p class="def-fixed-margin">
 
                       At vero eos et accusamus et iusto odio dignissimos ducimus qui
                       blanditiis praesentium voluptatum deleniti atque corrupti quos
@@ -79,7 +73,7 @@
                       non provident, similique sunt in culpa qui officia deserunt
                       mollitia animi, id est laborum et dolorum fuga.
                   </p>
-                  <p>
+                  <p class="def-fixed-margin">
 
                       At vero eos et accusamus et iusto odio dignissimos ducimus qui
                       blanditiis praesentium voluptatum deleniti atque corrupti quos
@@ -87,7 +81,7 @@
                       non provident, similique sunt in culpa qui officia deserunt
                       mollitia animi, id est laborum et dolorum fuga.
                   </p>
-                  <p>
+                  <p class="def-fixed-margin">
 
                       At vero eos et accusamus et iusto odio dignissimos ducimus qui
                       blanditiis praesentium voluptatum deleniti atque corrupti quos
@@ -95,7 +89,7 @@
                       non provident, similique sunt in culpa qui officia deserunt
                       mollitia animi, id est laborum et dolorum fuga.
                   </p>
-                  <p>
+                  <p class="def-fixed-margin">
 
                       Et harum quidem rerum facilis est et expedita distinctio. Nam
                       libero tempore, cum soluta nobis est eligendi optio cumque nihil
@@ -107,7 +101,7 @@
                       ut aut reiciendis voluptatibus maiores alias consequatur aut
                       perferendis doloribus asperiores repellat.
                   </p>
-                  <p>
+                  <p class="def-fixed-margin">
                       Et harum quidem rerum facilis est et expedita distinctio. Nam
                       libero tempore, cum soluta nobis est eligendi optio cumque nihil
                       impedit quo minus id quod maxime placeat facere possimus, omnis
@@ -119,7 +113,7 @@
                       perferendis doloribus asperiores repellat.
                   </p>
               </div>
-            <aside id="aside3" class="side">
+            <aside class="side-bg note-font-style def-fixed-padding one-fifth-by-def">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -138,9 +132,8 @@
           </article>
         </div>
       </main>
-      <footer>
-        <h2 class="rightalign">Кінець</h2>
+      <footer class="stack-row stack-end minor-padding bg-fixed-el">
+        <h2 class="rightalign def-fixed-margin">Кінець</h2>
       </footer>
-    </div>
   </body>
 </html>
